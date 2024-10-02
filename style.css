@@ -1,0 +1,786 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.column,
+.colum {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    transition: all .1s linear;
+    align-items: center;
+}
+
+button:active {
+    scale: .85;
+}
+
+.btn {
+    font-size: 16px;
+    background: linear-gradient(0, #ff8383, #fb766a, #c12424, #e36f48);
+}
+
+.shadow_button {
+    box-shadow: 0 0 48px #F0C05C;
+}
+
+aside {
+    display: none;
+    backdrop-filter: blur(18px);
+    z-index: 800;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*! header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    color: white;
+    z-index: 100;
+}
+
+.header {
+    background-color: #000;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.open {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.header a {
+    color: white
+}
+
+/* ! text color and buttons */
+.whitesmoke_laptop {
+    color: whitesmoke;
+}
+
+.black {
+    color: #000;
+}
+
+.white {
+    color: #dedede;
+}
+
+.orange {
+    color: #DDA046;
+}
+
+.red {
+    color: rgb(227, 36, 36);
+}
+
+.tel .orange {
+    text-shadow: 0 0 18px #D3BE88;
+}
+
+.tel button {
+    width: 140px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+
+/*! aside */
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 800px;
+    /* Увеличена ширина */
+    background: #ffffff75;
+    backdrop-filter: blur(18px);
+    height: 100vh;
+    padding: 30px;
+}
+
+aside .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul {
+    margin-top: 30px 0 0 50px;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+aside ul li {
+    display: block;
+}
+
+.close {
+    font-size: 30px;
+}
+
+/*! footer */
+footer {
+    background: #1D1A14;
+    margin-top: 100px;
+}
+
+.footer {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin: auto;
+}
+
+.footer .colum {
+    width: 220px;
+}
+
+.footer,
+.footer a {
+    color: #ffffff7c;
+
+}
+
+.footer .colum img {
+    width: 20px;
+}
+
+.footer li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.footer h3 {
+    color: white;
+}
+
+#gotop {
+    width: 30px;
+    align-self: flex-start;
+    cursor: pointer;
+
+}
+
+.footer .section {
+    align-items: center;
+}
+
+/* ! main */
+main {
+    background-color: rgb(37, 37, 37);
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+section {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.section1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white
+}
+
+.section1 .fon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.section1 h1 {
+    text-transform: uppercase;
+
+}
+
+.section1 .column {
+    padding: 90px 0;
+    width: 600px;
+}
+
+.section1 .btn_banner {
+    width: 160px;
+    background: #ffffffa6;
+    color: #000;
+}
+
+.section1 .btn_banner:hover {
+    background: #DDA046;
+}
+
+.section1 form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    background: #cccbcb9d;
+    margin: 30px;
+    color: #000;
+}
+
+.small {
+    font-weight: 500;
+}
+
+.section2 .colum {
+    width: 340px;
+    height: 476px;
+    position: relative;
+    background: white;
+    color: #000;
+    padding: 30px;
+}
+
+.section2 .colum:hover {
+    background: #DDA046;
+    color: white;
+}
+
+.section2 .colum .cercle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #DDA046;
+    border-radius: 50%;
+}
+
+.section2 .colum:hover .cercle {
+    background: #fff;
+}
+
+.section2 .colum img {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section3 .flex {
+    background: #1D1A14;
+    position: relative;
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 100px;
+}
+
+.section button {
+    color: white;
+}
+
+.section3 .flex .fon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.section3 .flex .column {
+    width: 400px;
+    padding: 70px 50px;
+    margin: 100px;
+}
+
+section h2,
+.section3 p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section h2,
+.section3 p {
+    text-align: center;
+}
+
+.section3 .flex p {
+    text-align: justify;
+}
+
+.section3 .flex .column h4 {
+    color: #DDA046;
+}
+
+.section3 .img {
+    width: 200;
+    height: 200px;
+    position: relative;
+}
+
+.section3 .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.section4 .flex {
+    width: 340px;
+    margin: 20px;
+}
+
+.section4 .flex img {
+    width: 35px;
+    height: 35px;
+}
+
+section .flex_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
+.section5 .flex_wrap {
+    gap: 0;
+}
+
+.section5 .flex_wrap img {
+    width: 33%;
+}
+
+.section5 .btn {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.section6 .blok {
+    width: 340px;
+    height: 540px;
+    position: relative;
+}
+
+.section6 .blok img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.section6 .blok .colum {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    background: #00000077;
+    color: white;
+}
+
+.section6 ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    width: 800px;
+}
+
+.section6 ul li {
+    width: 300px;
+    margin: 40px;
+    position: relative;
+}
+
+.section6 ul li::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20%;
+    left: -30px;
+    background: url(./img/icon/ul.png);
+    transform: translateY(-50%);
+}
+
+.section7 {
+    background: #1D1A14;
+}
+
+.section7 h2 {
+    font-size: 60px;
+    color: #DDA046;
+}
+
+.section7 .flex {
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 0;
+    color: white;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.left,
+.right {
+    cursor: pointer;
+}
+
+#slidee{
+    width: 300;
+    height: auto;
+}
+
+/* ! */
+aside {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.5s ease-in-out;
+    /* Увеличили длительность и добавили плавность */
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+aside .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+aside h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 15px 0;
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #f90;
+}
+
+aside span {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.header .open {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* ! */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blinking-arrow {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.map-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.image-button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ! */
+.header_btn_telegram {
+    background-color: #0088cc;
+    /* Цвет фона для кнопки Telegram */
+    color: white;
+    /* Цвет текста */
+    cursor: pointer;
+    /* Курсор в виде руки при наведении */
+}
+
+.header_btn_viber {
+    background-color: #665cac;
+    /* Цвет фона для кнопки Viber */
+    color: white;
+    /* Цвет текста */
+    border: none;
+    /* Убираем границу */
+    cursor: pointer;
+    /* Курсор в виде руки при наведении */
+}
+
+.header_btn_telegram img,
+.header_btn_viber img {
+    vertical-align: middle;
+    /* Выравнивание изображения по центру */
+    margin-right: 8px;
+    /* Отступ справа от изображения */
+}
+
+.header_btn_telegram:hover {
+    background-color: #0077b5;
+    /* Цвет фона при наведении для кнопки Telegram */
+}
+
+.header_btn_viber:hover {
+    background-color: #554a9f;
+    /* Цвет фона при наведении для кнопки Viber */
+}
+
+@keyframes bounce-flip {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    10% {
+        transform: translateY(-10px) rotate(40deg);
+    }
+
+    25% {
+        transform: translateY(-20px) rotate(90deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(180deg);
+    }
+
+    75% {
+        transform: translateY(-20px) rotate(270deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+.header_btn_telegram img,
+.header_btn_viber img {
+    vertical-align: middle;
+    /* Выравнивание изображения по центру */
+    margin-right: 8px;
+    /* Отступ справа от изображения */
+    transition: transform 0.8s;
+    /* Плавный переход для анимации */
+}
+
+.header_btn_telegram:hover img,
+.header_btn_viber:hover img {
+    animation: bounce-flip 0.8s;
+}
+
+.white {
+    text-align: center;
+}
+
+.slider-nout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.left-nout,
+.right-nout {
+    cursor: pointer;
+}
+
+.blinking-arrow-nout {
+    animation: blink 1s infinite;
+}
+
+#VR {
+    align-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-nout img {
+    width: 1200px;
+    height: 623px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.white-text-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 250);
+    cursor: pointer;
+}
+
+line h3:hover {
+    color: #DDA046;
+    transition: color 0.3s ease;
+}
+
+line h3::after {
+    color: rgb(255, 255, 250);
+    ;
+    transition: color 0.3s ease;
+}
+
+.flex_wrap-Bucovel img {
+    width: 900px;
+    height: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flex_wrap-Bucovel img{
+    object-fit: cover;
+    width: 90%;
+    transition: transform .5s ease-in-out;
+}
+
+.flex_wrap-Bucovel:hover img {
+    transform: scale(1.5) rotate(132deg);
+}
+
+.center-text-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-int img {
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
